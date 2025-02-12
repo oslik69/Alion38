@@ -1,0 +1,34 @@
+/* Общие стили для пагинации */
+.custom-pagination {
+    display: flex;
+    justify-content: center; /* Центрируем пагинацию */
+    align-items: center;
+}
+
+/* Стиль для активной страницы */
+.active-page {
+    background-color: #007bff; /* Синий фон */
+    color: white; /* Белый цвет текста */
+    border: 1px solid #0056b3; /* Темно-синий бордер */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Легкий эффект свечения */
+    font-weight: bold; /* Сделаем текст жирным */
+}
+
+/* Стиль для неактивных страниц */
+.inactive-page {
+    background-color: white;
+    color: #007bff; /* Синий текст */
+    border: 1px solid #007bff; /* Синий бордер */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Эффект при наведении */
+.inactive-page:hover {
+    background-color: #007bff; /* Синий фон при наведении */
+    color: white; /* Белый текст */
+}
+
+/* Если нужно добавить скругление углов */
+.custom-pagination .pagination-item {
+    border-radius: 20px; /* Скругленные углы */
+}

@@ -1,0 +1,61 @@
+.device-card {
+    width: 250px; /* Ширина карточки */
+    height: 400px; /* Высота карточки */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #ddd; /* Цвет рамки */
+    border-radius: 10px; /* Округление углов */
+    transition: all 0.3s ease; /* Плавная анимация для всех изменений */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.device-card:hover {
+    border-color: #007bff; /* Цвет рамки при наведении */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3); /* Более выраженная тень */
+    transform: scale(1.05); /* Легкое увеличение карточки при наведении */
+}
+
+.device-card img {
+    width: 100%; /* Ширина изображения */
+    height: 200px; /* Высота изображения */
+    object-fit: cover; /* Изображение будет заполнять доступное пространство, не искажая пропорции */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.device-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #28a745; /* Зеленый цвет для акцента */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Отступ сверху */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.price-value {
+    font-size: 1.8rem; /* Увеличиваем размер для основной цены */
+    margin-right: 5px;
+}
+
+.price-currency {
+    font-size: 1.5rem;
+    color: #999; /* Цвет для рубля более светлый */
+}
+
+.device-price:hover {
+    transform: scale(1.05); /* Эффект увеличения при наведении */
+    color: #ff5722; /* Меняем цвет при наведении */
+}
+
+/* Добавим эффект на кнопки */
+.device-card button {
+    transition: background-color 0.3s ease;
+}
+
+.device-card button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}

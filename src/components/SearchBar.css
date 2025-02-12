@@ -1,0 +1,18 @@
+/* src/components/SearchBar.css */
+.search-bar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-bar .form-control {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-bar button {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+}
